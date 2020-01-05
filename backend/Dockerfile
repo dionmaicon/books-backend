@@ -1,14 +1,13 @@
-FROM node:latest
+FROM node:12.14.0-alpine
 
-RUN mkdir -p /app/backend
-WORKDIR /app/backend
+RUN mkdir -p /app
+WORKDIR /app
 
-COPY package.json /app/backend
-COPY package-lock.json /app/backend
+COPY package.json /app
+COPY package-lock.json /app
 
-RUN npm install
-RUN npm install -g nodemon
+RUN npm install && npm install -g nodemon
 
-COPY . /app/backend
+COPY . /app
 
 CMD ["npm", "run", "start"]
