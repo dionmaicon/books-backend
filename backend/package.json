@@ -1,0 +1,21 @@
+{
+  "name": "backend_default",
+  "version": "1.0.0",
+  "description": "Default Node.Js Environment",
+  "author": "Dion Maicon E. Duarte <dionmaicon@outlook.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "isbn-validate": "^1.0.3",
+    "mongoose": "^5.6.10",
+    "mongoose-long": "^0.2.1"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
+  }
+}
