@@ -6,7 +6,7 @@ Node.js, MongoDB
 
 ## Install
 
-git clone https://github.com/dionmaicon/bookservice.git
+git clone https://github.com/dionmaicon/books-backend.git
 
 Requirements:
 - docker
